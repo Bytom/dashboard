@@ -143,8 +143,8 @@ class AdvancedTxForm extends React.Component {
               <MenuItem eventKey='control_address'>Control with address</MenuItem>
               <MenuItem eventKey='vote_output'>Vote</MenuItem>
               <MenuItem eventKey='veto'>Veto</MenuItem>
-              <MenuItem eventKey='cross_chain_in'>Cross Chain In</MenuItem>
-              <MenuItem eventKey='cross_chain_out'>Cross Chain Out</MenuItem>
+              {/* <MenuItem eventKey='cross_chain_in'>Cross Chain In</MenuItem> */}
+              {/* <MenuItem eventKey='cross_chain_out'>Cross Chain Out</MenuItem> */}
             </DropdownButton>
           </div>
         </FormSection>

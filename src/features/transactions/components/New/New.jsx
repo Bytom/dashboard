@@ -25,9 +25,10 @@ class Form extends React.Component {
   componentDidMount() {
     if (!this.props.autocompleteIsBalanceLoaded) {
       this.props.fetchBalanceAll().then(() => {
-        this.props.getVoteDetail().then(()=>{
-          this.props.didLoadBalanceAutocomplete()
-        })
+        // this.props.getVoteDetail().then(()=>{
+        //   this.props.didLoadBalanceAutocomplete()
+        // })
+        this.props.didLoadBalanceAutocomplete()
       })
     }
     if (!this.props.autocompleteIsAssetLoaded) {
@@ -133,11 +134,11 @@ class Form extends React.Component {
                   onClick={(e) => this.showForm(e, 'vote')}>
                   {t('transaction.new.vote')}
                   </button>
-                <button
+                {/* <button
                   className={`btn btn-default ${this.props.crossChainSelected && 'active'}`}
                   onClick={(e) => this.showForm(e, 'crossChain')}>
                   {t('transaction.new.crossChain')}
-                  </button>
+                  </button> */}
                 <button
                   className={`btn btn-default ${this.props.issueAssetSelected && 'active'}`}
                   onClick={(e) => this.showForm(e, 'issueAsset')}>
